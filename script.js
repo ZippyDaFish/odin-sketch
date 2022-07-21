@@ -12,7 +12,16 @@ function makeRows(rows, cols) {
   };
 };
 
-function showSizeValue(val){
+function changeGrid() {
+  const items = document.querySelectorAll('.grid-item');
+  items.forEach(item => {
+    item.remove();
+  });
+  gridSize = document.getElementById("sizeSlider").value;
+  makeRows(gridSize, gridSize);
+}
+
+function showSizeValue(val) {
   document.getElementById("sizeValue").innerText = val + "x" + val;
 }
 
