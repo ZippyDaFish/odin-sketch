@@ -26,5 +26,6 @@ body {
     grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 .grid-item {
+    background-color: white;
     border: 1px solid #ddd;
 }

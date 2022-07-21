@@ -25,6 +25,12 @@ function changeGrid() {
   gridSize = document.getElementById("sizeSlider").value;
   makeRows(gridSize, gridSize);
 }
+function clearGrid() {
+  const items = document.querySelectorAll('.grid-item');
+  items.forEach(item => {
+    item.style.backgroundColor = "white";
+  })
+}
 
 function showSizeValue(val) {
   document.getElementById("sizeValue").innerText = val + "x" + val;
