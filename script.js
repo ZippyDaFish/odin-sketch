@@ -12,4 +12,8 @@ function makeRows(rows, cols) {
   };
 };
 
+function showSizeValue(val){
+  document.getElementById("sizeValue").innerText = val + "x" + val;
+}
+
 makeRows(16, 16);
